@@ -4,8 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Green Energy</title>
-    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+
+    <script type="application/javascript" src="js/main.js"></script>
 </head>
 
 <body>
@@ -22,16 +24,16 @@
 
         <nav class="nav primary-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="focusOnElement('#');">Home</a></li>
                 <!--
           -->
-                <li><a href="#">Services</a></li>
+                <li><a href="#services" onclick="focusOnElement('services');"> Services</a></li>
                 <!--
           -->
-                <li><a href="#">About</a></li>
+                <li><a href="#about" onclick="focusOnElement('about');">About</a></li>
                 <!--
           -->
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact" onclick="focusOnElement('contact');">Contact</a></li>
             </ul>
         </nav>
 
@@ -39,17 +41,54 @@
 
     <!-- Hero -->
 
-    <section class="hero container">
+    <section class="hero container"></section>
+
+    <section class="grid">
+
+        <section class="blocks">
+
+            <h3 id="services">Services</h3>
+            <img class="portfolio" src="images/portfolio.jpg" width="32%" height="200px" />
+            <img class="portfolio" src="images/portfoliotwo.jpg" width="32%" height="200px" />
+            <img class="portfolio" src="images/portfoliothree.jpg" width="32%" height="200px" />
 
 
+        </section>
 
+        <section class="blocks">
+            <a href="">
+
+                <h3 id="about">About</h3>
+            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pellentesque eu nunc eu accumsan. Phasellus tempor feugiat ante. Ut vulputate odio augue, vel consequat risus placerat eu. Aenean lobortis, nunc eget facilisis tristique, lectus enim varius elit, eu tincidunt est neque eu urna. Sed non ante justo. Nullam neque metus, maximus sed dolor placerat, finibus iaculis urna. Nunc egestas eget metus sed posuere. Cras ultricies suscipit lectus, et condimentum elit interdum suscipit. Sed dignissim eget erat non tristique. Vestibulum pellentesque, lacus eget sollicitudin fringilla, arcu magna bibendum tellus, vel malesuada leo elit eget ante. Vivamus id lectus sit amet tellus elementum condimentum. Fusce ultricies, lectus at congue vulputate, ex metus vulputate dui, in tristique est neque non dolor. Nam tortor mauris, ultrices nec diam quis, venenatis egestas justo. Maecenas suscipit ornare sapien non bibendum.</p>
+        </section>
+
+
+        <section class="blocks">
+            <a href="">
+
+                <h3 id="contact">Contact Us</h3>
+            </a>
+            <div id="contactform">
+                Name:
+                <br>
+                <input type="text" class="contactname">
+                <br>
+                <br> Email Address:
+                <br>
+                <input type="email" class="contactname">
+                <br>
+                <br> Details of your project:
+                <br>
+                <textarea class="contactname" rows="4" cols="100"></textarea>
+
+
+                <input type="submit" class="contactname">
+
+            </div>
+        </section>
     </section>
 
-    <!-- Teasers -->
-
-
-
-    <!-- Footer -->
 
     <footer class="primary-footer container group">
 
@@ -60,13 +99,13 @@
                 <li><a href="#">Home</a></li>
                 <!--
           -->
-                <li><a href="#">Services</a></li>
+                <li><a href="#services">Services</a></li>
                 <!--
           -->
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <!--
           -->
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <!--
             </ul>
         </nav>
