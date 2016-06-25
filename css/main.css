@@ -324,16 +324,16 @@ p a {
 */
 
 .logo {
-    border-bottom: 1px solid #eaeaea;
     float: left;
     font-size: 48px;
     font-weight: 300;
     letter-spacing: 1.9px;
     line-height: 44px;
-    padding: 40px 0 22px 40px;
+    padding: 40px 0 22px 0px;
     text-transform: uppercase;
     text-align: center;
     font-family: 'Raleway Dots', cursive;
+    margin-left: -120px;
 }
 
 .tagline {
@@ -357,6 +357,19 @@ p a {
 .primary-header a:hover,
 .primary-footer a:hover {
     color: #648880;
+}
+
+.blocks {
+    margin-bottom: 50px;
+    padding: 20px;
+    line-height: 2.1;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.blocks .img {
+    float: right;
+    margin: 0px 0px 0px 10px;
 }
 
 
